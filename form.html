@@ -1,57 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neues Tutorial erstellen</title>
 </head>
 <body>
-    <form action="form.html" method="GET">
-        <p>
+    <header>
+        <img src="assets/img/Seite-Logo.jpg" alt="Seite-Logo" width="50" height="50">
+        <h1>Beste Tutorials EUW </h1>
+    </header>
+    <nav>
+        <p><a href = "list.html">Liste der Kategorien</a> | <a href = "tutorials.html">Tutorials der Kategorie "Kochen"</a> | <a href = "tutorial.html">Details zum Tutorial "asdf"</a> | <a href="form.html">Neues Tutorial erstellen</a></p>
+    </nav>
+    <main>
+        <form action="form.html" method="POST">
+            <fieldset>
+                <legend>Textdaten</legend>
+                <p>
+                    <label>
+                        Titel:
+                        <input type="text" name="name" placeholder="Titel des Tutorials" pattern="[A-Z][a-zA-Z]*" minlength="4" maxlength="20" required>
+                    </label> 
+                </p>
+                <p>
+                    <label>
+                        Kategorien: 
+                        <input type="text" pattern="([^,]+)(,[^,]+)*" required placeholder="Liste der Kategorien, mit Kommata getrennt">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Beschreibung:
+                        <input type="textarea" name="description" placeholder="Beschreibung des Tutorials" minlength="40">
+                    </label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Zeitdaten</legend>
+                <p>
+                    <label>
+                        Dauer:
+                        <input type="time" name="duration" min="00:20" max="15:59" required>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Veröffentlichung:
+                        <input type="date" name="date" required>
+                    </label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>sonstige Daten</legend>
+                <p>
+                    <label>
+                        Sprache: <br>
+                        <input type="radio" name="language" value="de" checked> Deutsch <br>
+                        <input type="radio" name="language" value="en"> Englisch <br>
+                        <input type="radio" name="language" value="fr"> Französisch <br>
+                        <input type="radio" name="language" value="es"> Spanisch <br>
+                        <input type="radio" name="language" value="-"> - <br>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Inhalt: <br>
+                        <input type="radio" name="type" value="text" required>  Text-Tutorial <br>
+                        <input type="radio" name="type" value="video" required>  Video-Tutorial <br>
+                        <input type="text" name="content" placeholder="URL des Tutorials" required>
+                    </label>
+                </p>
+            </fieldset>
             <label>
-                Titel:
-                <input type="text" name="name" placeholder="Titel des Tutorials" minlength="4" maxlength="20" required>
-            </label> 
-        </p>
-        <p>
-            <label>
-                Sprache: <br>
-                <input type="radio" name="language" value="de" checked> Deutsch <br>
-                <input type="radio" name="language" value="en"> Englisch <br>
-                <input type="radio" name="language" value="fr"> Französisch <br>
-                <input type="radio" name="language" value="es"> Spanisch <br>
-                <input type="radio" name="language" value="-"> - <br>
+                <input type="submit" name="submit" value="Tutorial erstellen!">
             </label>
-        </p>
-        <p>
-            <label>
-                Beschreibung:
-                <input type="textarea" name="description" placeholder="Beschreibung des Tutorials" minlength="40">
-            </label>
-        </p>
-        <p>
-            <label>
-                Dauer:
-                <input type="time" name="duration" min="00:20" max="15:59" required>
-            </label>
-        </p>
-        <p>
-            <label>
-                Veröffentlichung:
-                <input type="date" name="date" required>
-            </label>
-        </p>
-        <p>
-            <label>
-                Inhalt: <br>
-                <input type="radio" name="type" value="text" required>  Text-Tutorial <br>
-                <input type="radio" name="type" value="video" required>  Video-Tutorial <br>
-                <input type="text" name="content" placeholder="URL des Tutorials" required>
-            </label>
-        </p>
-        <label>
-            <input type="submit" name="submit" value="Tutorial erstellen!">
-        </label>
-    </form>
+        </form>
+    </main>
+    <aside>
+        <h3>Neue Tutorials</h3>
+        <ul>
+            <li>Spring Vegetable Gnocchi | Kenji's Cooking Show, 07.07.2024</li>
+            <li>Massaman Curry | Kenji's Cooking Show, 10.04.2024</li>
+        </ul>
+    </aside>
+    <footer>
+        <small>by BeJaMa</small>
+    </footer>
 </body>
 </html>

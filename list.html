@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
     <head>
         <meta charset="UTF-8">
         <title>Liste der Kategorien</title>
     </head>
     <body>
         <header>
-            <h1>Beste Tutorials EUW <img src="assets/img/Seite-Logo.jpg" alt="Seite-Logo" width="50" height="50"></h1>
+            <img src="assets/img/Seite-Logo.jpg" alt="Seite-Logo" width="50" height="50">
+            <h1>Beste Tutorials EUW </h1>
         </header>
         <nav>
-            <p><a href = "list.html">Liste der Kategorien</a> | <a href = "tutorials.html">Tutorials der Kategorie "Kochen"</a> | <a href = "tutorial.html">Details zum Tutorial "asdf"</a></p>
+            <p><a href = "list.html">Liste der Kategorien</a> | <a href = "tutorials.html">Tutorials der Kategorie "Kochen"</a> | <a href = "tutorial.html">Details zum Tutorial "asdf"</a> | <a href="form.html">Neues Tutorial erstellen</a></p>
         </nav>
         <main>
             <ol>
@@ -33,8 +34,8 @@
                 </li>
             </ol>
             <form action="list.html" method="get">
-                <input type="text" name="Suchbegriff" value="Titel des Videos..." size="25">
-                <input type="submit" name="absenden" value="Suchen!">
+                <input type="text" name="search" value="Titel des Videos..." size="25">
+                <input type="submit" name="send" value="Suchen!" pattern="[A-Z][a-zA-Z]*">
             </form>
         </main>
         <aside>
@@ -45,7 +46,7 @@
             </ul>
         </aside>
         <footer>
-            <small>by Ben Nentwig</small>
+            <small>by BeJaMa</small>
         </footer>
     </body>
 </html>
