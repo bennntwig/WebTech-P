@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neues Tutorial erstellen</title>
+</head>
+<body>
+    <form action="form.html" method="GET">
+        <p>
+            <label>
+                Titel:
+                <input type="text" name="name" placeholder="Titel des Tutorials" minlength="4" maxlength="20" required>
+            </label> 
+        </p>
+        <p>
+            <label>
+                Sprache: <br>
+                <input type="radio" name="language" value="de" checked> Deutsch <br>
+                <input type="radio" name="language" value="en"> Englisch <br>
+                <input type="radio" name="language" value="fr"> Französisch <br>
+                <input type="radio" name="language" value="es"> Spanisch <br>
+                <input type="radio" name="language" value="-"> - <br>
+            </label>
+        </p>
+        <p>
+            <label>
+                Beschreibung:
+                <input type="textarea" name="description" placeholder="Beschreibung des Tutorials" minlength="40">
+            </label>
+        </p>
+        <p>
+            <label>
+                Dauer:
+                <input type="time" name="duration" min="00:20" max="15:59" required>
+            </label>
+        </p>
+        <p>
+            <label>
+                Veröffentlichung:
+                <input type="date" name="date" required>
+            </label>
+        </p>
+        <p>
+            <label>
+                Inhalt: <br>
+                <input type="radio" name="type" value="text" required>  Text-Tutorial <br>
+                <input type="radio" name="type" value="video" required>  Video-Tutorial <br>
+                <input type="text" name="content" placeholder="URL des Tutorials" required>
+            </label>
+        </p>
+        <label>
+            <input type="submit" name="submit" value="Tutorial erstellen!">
+        </label>
+    </form>
+</body>
+</html>
