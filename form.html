@@ -18,35 +18,35 @@
             <fieldset>
                 <legend>Textdaten</legend>
                 <p>
+                    Titel:
                     <label>
-                        Titel:
                         <input type="text" name="name" placeholder="Titel des Tutorials" pattern="[A-Z][a-zA-Z]*" minlength="4" maxlength="20" required>
                     </label> 
                 </p>
                 <p>
+                    Kategorien: 
                     <label>
-                        Kategorien: 
                         <input type="text" pattern="([^,]+)(,[^,]+)*" required placeholder="Liste der Kategorien, mit Kommata getrennt">
                     </label>
                 </p>
                 <p>
+                    Beschreibung:
                     <label>
-                        Beschreibung:
-                        <input type="textarea" name="description" placeholder="Beschreibung des Tutorials" minlength="40">
+                        <textarea name="description" minlength="40" placeholder="Beschreibung des Tutorials"></textarea>
                     </label>
                 </p>
             </fieldset>
             <fieldset>
                 <legend>Zeitdaten</legend>
                 <p>
+                    Dauer:
                     <label>
-                        Dauer:
                         <input type="time" name="duration" min="00:20" max="15:59" required>
                     </label>
                 </p>
                 <p>
+                    Veröffentlichung:
                     <label>
-                        Veröffentlichung:
                         <input type="date" name="date" required>
                     </label>
                 </p>
@@ -54,20 +54,32 @@
             <fieldset>
                 <legend>sonstige Daten</legend>
                 <p>
+                    Sprache: <br>
                     <label>
-                        Sprache: <br>
                         <input type="radio" name="language" value="de" checked> Deutsch <br>
+                    </label>
+                    <label>
                         <input type="radio" name="language" value="en"> Englisch <br>
+                    </label>
+                    <label>
                         <input type="radio" name="language" value="fr"> Französisch <br>
+                    </label>
+                    <label>
                         <input type="radio" name="language" value="es"> Spanisch <br>
+                    </label>
+                    <label>
                         <input type="radio" name="language" value="-"> - <br>
                     </label>
                 </p>
                 <p>
+                    Inhalt: <br>
                     <label>
-                        Inhalt: <br>
-                        <input type="radio" name="type" value="text" required>  Text-Tutorial <br>
                         <input type="radio" name="type" value="video" required>  Video-Tutorial <br>
+                    </label>
+                    <label>
+                        <input type="radio" name="type" value="text" required>  Text-Tutorial <br>
+                    </label>
+                    <label>
                         <input type="text" name="content" placeholder="URL des Tutorials" required>
                     </label>
                 </p>
