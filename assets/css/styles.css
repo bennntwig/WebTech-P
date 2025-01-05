@@ -1,12 +1,13 @@
 body {
     background-color: #FCFDFF;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 h1,
+h2,
 h3 {
     color: #0471FD;
     font-style: italic;
-    font-family: Helvetica, Arial, sans-serif;
 }
 
 nav,
@@ -30,9 +31,49 @@ tbody tr:nth-child(odd) {
     background-color: #DAE8F8;
 }
 
-
-
 thead,
 tfoot {
     background-color: #B1D4FD;
+}
+
+nav {
+    padding: 2px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px #0471FD;
+
+}
+
+nav a {
+    margin: 10px;
+}
+
+footer {
+    background-color: #DAE8F8;
+    position: fixed;
+    bottom: 5px;
+}
+
+aside {
+    margin-bottom: 30px;
+}
+
+.positioned {
+    position: static
+}
+
+.positioned-text {
+    position: absolute;
+    left: 150px;
+}
+
+.pos-right {
+    position: absolute;
+    left: 600px;
+}
+
+.pos-header {
+    position: absolute;
+    left: 350px;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neues Tutorial erstellen</title>
+    <link rel="stylesheet" href="assets/css/forms.css" type="text/css">
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
 </head>
 <body>
@@ -20,13 +21,13 @@
                 <legend>Textdaten</legend>
                 <p>
                     Titel:
-                    <label>
+                    <label class="required">
                         <input type="text" name="name" placeholder="Titel des Tutorials" pattern="[A-Z][a-zA-Z]*" minlength="4" maxlength="20" required>
                     </label> 
                 </p>
                 <p>
                     Kategorien: 
-                    <label>
+                    <label class="required">
                         <input type="text" pattern="([^,]+)(,[^,]+)*" required placeholder="Liste der Kategorien, mit Kommata getrennt">
                     </label>
                 </p>
@@ -41,13 +42,13 @@
                 <legend>Zeitdaten</legend>
                 <p>
                     Dauer:
-                    <label>
+                    <label class="required">
                         <input type="time" name="duration" min="00:20" max="15:59" required>
                     </label>
                 </p>
                 <p>
                     Veröffentlichung:
-                    <label>
+                    <label class="required">
                         <input type="date" name="date" required>
                     </label>
                 </p>
@@ -74,13 +75,13 @@
                 </p>
                 <p>
                     Inhalt: <br>
-                    <label>
+                    <label class="required">
                         <input type="radio" name="type" value="video" required>  Video-Tutorial <br>
                     </label>
-                    <label>
+                    <label class="required">
                         <input type="radio" name="type" value="text" required>  Text-Tutorial <br>
                     </label>
-                    <label>
+                    <label class="required">
                         <input type="text" name="content" placeholder="URL des Tutorials" required>
                     </label>
                 </p>

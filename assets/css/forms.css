@@ -1,0 +1,40 @@
+input:invalid {
+    border-color: red;
+}
+
+.required::after {
+    content: "(erforderliches Feld)";
+    font-size: small;
+}
+
+input[type="submit"] {
+    background-color: #B1D4FD;
+    border: #0471FD 2px solid;
+    border-radius: 7px;
+}
+
+legend {
+    border-top: #0471FD 2px solid;
+    border-bottom: #0471FD 2px solid;
+    background-color: #B1D4FD;
+    border-radius: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+fieldset {
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-color: #0471FD;
+}
+
+input {
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+.required input {
+    border-left: 2px solid #0471FD;
+}
