@@ -1,0 +1,38 @@
+body {
+    background-color: #FCFDFF;
+}
+
+h1,
+h3 {
+    color: #0471FD;
+    font-style: italic;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+nav,
+aside {
+    background-color: #DAE8F8;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+nav a:hover {
+    color: #6DA8F8;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #DAE8F8;
+}
+
+
+
+thead,
+tfoot {
+    background-color: #B1D4FD;
+}
