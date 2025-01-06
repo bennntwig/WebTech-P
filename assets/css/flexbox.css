@@ -1,0 +1,64 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+#Box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+#Box li {
+    text-align: center;
+}
+form {
+    align-self: center;
+    margin-top: 20px;
+    flex: 1 1 100%;
+}
+
+main h2 {
+    flex: 1 1 100%;
+}
+
+
+main .pos-right img {
+    max-width: 100%;
+    height: auto;
+}
+main figure {
+    flex: 1 1 100%;
+    max-width: none; 
+    margin: 0;
+}
+
+main figure video {
+    width: 100vw; 
+    height: auto;
+}
+
+table {
+    flex: 1 1 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table thead,
+table tfoot {
+    background-color: #B1D4FD;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #DAE8F8;
+}
+
+table th, 
+table td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: left;
+}
