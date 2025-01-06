@@ -4,28 +4,6 @@ main {
     gap: 20px;
     padding: 10px;
 }
-#Box {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-}
-#Box li {
-    text-align: center;
-}
-form {
-    align-self: center;
-    margin-top: 20px;
-    flex: 1 1 100%;
-}
-
-main h2 {
-    flex: 1 1 100%;
-}
-
-
 main .pos-right img {
     max-width: 100%;
     height: auto;

@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="de">
-    <head>
-        <meta charset="UTF-8">
-        <title>Liste der Kategorien</title>
-        <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
-        <link rel="stylesheet" href="assets/css/forms.css" type="text/css">
-        <link rel="stylesheet" href="assets/css/flexbox.css" type="text/css">
-    </head>
-    <body>
-        <header>
-            <img src="assets/img/Seite-Logo.jpg" alt="Seite-Logo" width="50" height="50">
-            <h1>Beste Tutorials EUW </h1>
-        </header>
-        <nav>
-            <p><a href = "list.html">Liste der Kategorien</a> | <a href = "tutorials.html">Tutorials der Kategorie "Kochen"</a> | <a href = "tutorial.html">Details zum Tutorial "asdf"</a> | <a href="form.html">Neues Tutorial erstellen</a></p>
-        </nav>
-        <main>
-            <ol id="Box">
-                <li>
-                    <a href = "tutorials.html">
-                        Kochen <br>
-                        <img src="assets/img/Kochen.png" alt="Kochen-Logo" width="200" height="200">
-                    </a>
-                </li>
-                <li>
-                    <a href = "tutorials.html">
-                        Mathematik <br>
-                        <img src="assets/img/Mathematik.png" alt="Mathematik-Logo" width="200" height="200">
-                    </a>
-                </li>
-                <li>
-                    <a href = "tutorials.html">
-                        Web-Entwicklung <br>
-                        <img src="assets/img/Web-Entwicklung.png" alt="Web-Entwiclung-Logo" width="200" height="200">
-                    </a>
-                </li>
-            </ol>
-            <form action="list.html" method="get">
-                <input type="text" name="search" value="Titel des Videos..." size="25" pattern="[A-Z][a-zA-Z]*">
-                <input type="submit" name="send" value="Suchen!">
-            </form>
-        </main>
-        <aside>
-            <h3>Neue Tutorials</h3>
-            <ul>
-                <li>Spring Vegetable Gnocchi | Kenji's Cooking Show, 07.07.2024</li>
-                <li>Massaman Curry | Kenji's Cooking Show, 10.04.2024</li>
-            </ul>
-        </aside>
-        <footer>
-            <small>by BeJaMa</small>
-        </footer>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Liste der Kategorien</title>
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/tiles.css" type="text/css">
+</head>
+<body>
+    <header>
+        <img src="assets/img/Seite-Logo.jpg" alt="Seite-Logo" width="50" height="50">
+        <h1>Beste Tutorials EUW</h1>
+    </header>
+    <nav>
+        <p>
+            <a href="list.html">Liste der Kategorien</a> | 
+            <a href="tutorials.html">Tutorials der Kategorie "Kochen"</a> | 
+            <a href="tutorial.html">Details zum Tutorial</a> | 
+            <a href="form.html">Neues Tutorial erstellen</a>
+        </p>
+    </nav>
+    <main>
+        <form action="list.html" method="get">
+            <label for="search">Suche:</label>
+            <input type="text" id="search" name="search" value="Titel des Videos..." size="25" pattern="[A-Z][a-zA-Z]*">
+            <input type="submit" name="send" value="Suchen!">
+        </form>
+
+        <section class="tiles">
+            <a href="tutorials.html" class="tile">
+                <img src="assets/img/Kochen.png" alt="Kochen-Logo">
+                <p>Kochen</p>
+            </a>
+            <a href="tutorials.html" class="tile">
+                <img src="assets/img/Mathematik.png" alt="Mathematik-Logo">
+                <p>Mathematik</p>
+            </a>
+            <a href="tutorials.html" class="tile">
+                <img src="assets/img/Web-Entwicklung.png" alt="Webentwicklung-Logo">
+                <p>Web-Entwicklung</p>
+            </a>
+            <a href="tutorials.html" class="tile">
+                <img src="assets/img/meme.jpeg" alt="Design-Logo">
+                <p>Memes</p>
+            </a>
+        </section>
+    </main>
+    <aside>
+        <h3>Neue Tutorials</h3>
+        <ul>
+            <li>Spring Vegetable Gnocchi | Kenji's Cooking Show, 07.07.2024</li>
+            <li>Massaman Curry | Kenji's Cooking Show, 10.04.2024</li>
+        </ul>
+    </aside>
+    <footer>
+        <small>by BeJaMa</small>
+    </footer>
+</body>
 </html>
