@@ -13,6 +13,10 @@ h3 {
 nav,
 aside {
     background-color: #DAE8F8;
+    padding: 2px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 7px;
 }
 
 a {
@@ -37,12 +41,7 @@ tfoot {
 }
 
 nav {
-    padding: 2px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border-radius: 7px;
     box-shadow: 3px 3px 3px #0471FD;
-
 }
 
 nav a {
@@ -53,10 +52,12 @@ footer {
     background-color: #DAE8F8;
     position: fixed;
     bottom: 5px;
+
 }
 
 aside {
     margin-bottom: 30px;
+    border-color: #0471FD;
 }
 
 .positioned {
@@ -77,6 +78,7 @@ aside {
     position: absolute;
     left: 350px;
 }
-#box{
+
+#box {
     display: flex;
 }

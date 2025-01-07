@@ -1,0 +1,29 @@
+.grid-container {
+    display: grid;
+    grid-template-areas: "header header"
+        "nav nav"
+        "main aside"
+        "footer footer";
+    grid-template-columns: 80% 20%;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+    margin-bottom: 20px;
+}
+
+aside {
+    grid-area: aside
+}
+
+footer {
+    grid-area: footer;
+}

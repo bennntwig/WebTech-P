@@ -6,100 +6,104 @@
     <title>Neues Tutorial erstellen</title>
     <link rel="stylesheet" href="assets/css/forms.css" type="text/css">
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/grid.css" type="text/css">
+
 </head>
 <body>
-    <header>
-        <img src="assets/img/Seite-Logo.jpg" alt="Seite-Logo" width="50" height="50">
-        <h1>Beste Tutorials EUW </h1>
-    </header>
-    <nav>
-        <p><a href = "list.html">Liste der Kategorien</a> | <a href = "tutorials.html">Tutorials der Kategorie "Kochen"</a> | <a href = "tutorial.html">Details zum Tutorial "asdf"</a> | <a href="form.html">Neues Tutorial erstellen</a></p>
-    </nav>
-    <main>
-        <form action="form.html" method="POST">
-            <fieldset>
-                <legend>Textdaten</legend>
-                <p>
-                    Titel:
-                    <label class="required">
-                        <input type="text" name="name" placeholder="Titel des Tutorials" pattern="[A-Z][a-zA-Z]*" minlength="4" maxlength="20" required>
-                    </label> 
-                </p>
-                <p>
-                    Kategorien: 
-                    <label class="required">
-                        <input type="text" pattern="([^,]+)(,[^,]+)*" required placeholder="Liste der Kategorien, mit Kommata getrennt">
-                    </label>
-                </p>
-                <p>
-                    Beschreibung:
-                    <label>
-                        <textarea name="description" minlength="40" placeholder="Beschreibung des Tutorials"></textarea>
-                    </label>
-                </p>
-            </fieldset>
-            <fieldset>
-                <legend>Zeitdaten</legend>
-                <p>
-                    Dauer:
-                    <label class="required">
-                        <input type="time" name="duration" min="00:20" max="15:59" required>
-                    </label>
-                </p>
-                <p>
-                    Veröffentlichung:
-                    <label class="required">
-                        <input type="date" name="date" required>
-                    </label>
-                </p>
-            </fieldset>
-            <fieldset>
-                <legend>sonstige Daten</legend>
-                <p>
-                    Sprache: <br>
-                    <label>
-                        <input type="radio" name="language" value="de" checked> Deutsch <br>
-                    </label>
-                    <label>
-                        <input type="radio" name="language" value="en"> Englisch <br>
-                    </label>
-                    <label>
-                        <input type="radio" name="language" value="fr"> Französisch <br>
-                    </label>
-                    <label>
-                        <input type="radio" name="language" value="es"> Spanisch <br>
-                    </label>
-                    <label>
-                        <input type="radio" name="language" value="-"> - <br>
-                    </label>
-                </p>
-                <p>
-                    Inhalt: <br>
-                    <label class="required">
-                        <input type="radio" name="type" value="video" required>  Video-Tutorial <br>
-                    </label>
-                    <label class="required">
-                        <input type="radio" name="type" value="text" required>  Text-Tutorial <br>
-                    </label>
-                    <label class="required">
-                        <input type="text" name="content" placeholder="URL des Tutorials" required>
-                    </label>
-                </p>
-            </fieldset>
-            <label>
-                <input type="submit" name="submit" value="Tutorial erstellen!">
-            </label>
-        </form>
-    </main>
-    <aside>
-        <h3>Neue Tutorials</h3>
-        <ul>
-            <li>Spring Vegetable Gnocchi | Kenji's Cooking Show, 07.07.2024</li>
-            <li>Massaman Curry | Kenji's Cooking Show, 10.04.2024</li>
-        </ul>
-    </aside>
-    <footer>
-        <small>by BeJaMa</small>
-    </footer>
+    <div class="grid-container">
+        <header>
+            <img src="assets/img/Seite-Logo.jpg" alt="Seite-Logo" width="50" height="50">
+            <h1>Beste Tutorials EUW </h1>
+        </header>
+        <nav>
+            <p><a href = "list.html">Liste der Kategorien</a> | <a href = "tutorials.html">Tutorials der Kategorie "Kochen"</a> | <a href = "tutorial.html">Details zum Tutorial "asdf"</a> | <a href="form.html">Neues Tutorial erstellen</a></p>
+        </nav>
+        <main>
+            <form action="form.html" method="POST">
+                <fieldset>
+                    <legend>Textdaten</legend>
+                    <p>
+                        Titel:
+                        <label class="required">
+                            <input type="text" name="name" placeholder="Titel des Tutorials" pattern="[A-Z][a-zA-Z]*" minlength="4" maxlength="20" required>
+                        </label> 
+                    </p>
+                    <p>
+                        Kategorien: 
+                        <label class="required">
+                            <input type="text" pattern="([^,]+)(,[^,]+)*" required placeholder="Liste der Kategorien, mit Kommata getrennt">
+                        </label>
+                    </p>
+                    <p>
+                        Beschreibung:
+                        <label>
+                            <textarea name="description" minlength="40" placeholder="Beschreibung des Tutorials"></textarea>
+                        </label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Zeitdaten</legend>
+                    <p>
+                        Dauer:
+                        <label class="required">
+                            <input type="time" name="duration" min="00:20" max="15:59" required>
+                        </label>
+                    </p>
+                    <p>
+                        Veröffentlichung:
+                        <label class="required">
+                            <input type="date" name="date" required>
+                        </label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>sonstige Daten</legend>
+                    <p>
+                        Sprache: <br>
+                        <label>
+                            <input type="radio" name="language" value="de" checked> Deutsch <br>
+                        </label>
+                        <label>
+                            <input type="radio" name="language" value="en"> Englisch <br>
+                        </label>
+                        <label>
+                            <input type="radio" name="language" value="fr"> Französisch <br>
+                        </label>
+                        <label>
+                            <input type="radio" name="language" value="es"> Spanisch <br>
+                        </label>
+                        <label>
+                            <input type="radio" name="language" value="-"> - <br>
+                        </label>
+                    </p>
+                    <p>
+                        Inhalt: <br>
+                        <label class="required">
+                            <input type="radio" name="type" value="video" required>  Video-Tutorial <br>
+                        </label>
+                        <label class="required">
+                            <input type="radio" name="type" value="text" required>  Text-Tutorial <br>
+                        </label>
+                        <label class="required">
+                            <input type="text" name="content" placeholder="URL des Tutorials" required>
+                        </label>
+                    </p>
+                </fieldset>
+                <label>
+                    <input type="submit" name="submit" value="Tutorial erstellen!">
+                </label>
+            </form>
+        </main>
+        <aside>
+            <h3>Neue Tutorials</h3>
+            <ul>
+                <li>Spring Vegetable Gnocchi | Kenji's Cooking Show, 07.07.2024</li>
+                <li>Massaman Curry | Kenji's Cooking Show, 10.04.2024</li>
+            </ul>
+        </aside>
+        <footer>
+            <small>by BeJaMa</small>
+        </footer>
+    </div>
 </body>
 </html>
