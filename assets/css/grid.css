@@ -27,3 +27,21 @@ aside {
 footer {
     grid-area: footer;
 }
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-areas: "header"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+        grid-template-columns: auto;
+    }
+    
+    aside {
+        display: 2;
+    }
+
+
+}
+

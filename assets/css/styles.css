@@ -78,16 +78,28 @@ aside {
     position: absolute;
     left: 350px;
 }
-
+    
 #box {
     display: flex;
 }
 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
 
 @media (max-width: 480px) {
-    nav  {
-        display: block;
-        margin: 5px 0; 
-        text-align: center; 
+    h1 {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a{
+    display: flex;
+    margin: Spx 0;
+    text-align: center;
+
     }
 }

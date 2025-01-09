@@ -40,3 +40,12 @@ table td {
     padding: 5px;
     text-align: left;
 }
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    .sidebar {
+        order: 2;
+    }
+}
