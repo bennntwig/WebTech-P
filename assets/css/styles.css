@@ -82,3 +82,12 @@ aside {
 #box {
     display: flex;
 }
+
+
+@media (max-width: 480px) {
+    nav  {
+        display: block;
+        margin: 5px 0; 
+        text-align: center; 
+    }
+}
