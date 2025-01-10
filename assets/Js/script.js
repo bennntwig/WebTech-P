@@ -130,8 +130,6 @@ function printData(kategorie) {
         }
     }
 
-
-
     function printKapData(kapitel) {
         let printString = kapitel.dauer + "" + kapitel.name + ": " + kapitel.beschreibung + "\n";
         return printString;

@@ -46,7 +46,7 @@
                     <p>
                         Dauer:
                         <label class="required">
-                            <input type="time" name="duration" min="00:20" max="15:59" required>
+                            <input type="time" id="dauer" name="duration" min="00:20" max="15:59" required>
                         </label>
                     </p>
                     <p>
@@ -78,14 +78,14 @@
                     </p>
                     <p>
                         Inhalt: <br>
-                        <label class="required">
-                            <input type="radio" name="type" value="video" required>  Video-Tutorial <br>
+                        <label>
+                            <p class="required"><input type="radio" name="type" value="video" required> Video-Tutorial </p>
                         </label>
-                        <label class="required">
-                            <input type="radio" name="type" value="text" required>  Text-Tutorial <br>
+                        <label>
+                            <p class="required"><input type="radio" name="type" value="text" required> Text-Tutorial </p>
                         </label>
-                        <label class="required">
-                            <input type="text" name="content" placeholder="URL des Tutorials" required>
+                        <label>
+                            <p class="required">Wert <input type="text" id="wert" name="content" placeholder="" required> </p>
                         </label>
                     </p>
                 </fieldset>
@@ -105,5 +105,6 @@
             <small>by BeJaMa</small>
         </footer>
     </div>
+    <script src="assets/js/form.js"></script>
 </body>
 </html>
