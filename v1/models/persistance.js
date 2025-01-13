@@ -98,8 +98,8 @@ tutorial2.fuegeKategorieHinzu(kochenKat);
 let tutorialArr = [tutorial1, tutorial2];
 let kategorieArr = [kochenKat, matheKat, memeKat, WebDevKat];
 
-tutorialArr.sort(function (a, b) { return a.localeCompare(b) });
-kategorieArr.sort(function (a, b) { return a.localeCompare(b) });
+tutorialArr.sort(function (a, b) { return a.name.localeCompare(b.name) });
+kategorieArr.sort(function (a, b) { return a.name.localeCompare(b.name) });
 
 module.exports.getTutorialsZuKategorie = getTutorialsZuKategorie;
 module.exports.getDauerInStundenUndMinuten = getDauerInStundenUndMinuten;
