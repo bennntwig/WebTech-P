@@ -78,7 +78,7 @@ aside {
     position: absolute;
     left: 350px;
 }
-    
+
 #box {
     display: flex;
 }
@@ -95,11 +95,20 @@ aside {
     }
 }
 
-@media (max-width: 480px) {
-    nav a{
-    display: flex;
-    margin: Spx 0;
-    text-align: center;
+#burger-menu {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 
+@media (max-width: 480px) {
+    #nav-links {
+        display: none;
+    }
+
+    #burger-menu {
+        display: block;
     }
 }
