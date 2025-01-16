@@ -8,7 +8,6 @@ const server = http.createServer(function (req, res) {
     console.log(queryParams);
     let foundTut = [];
     let list = "";
-    let hi = "";
 
     for (let i = 0; i < pers.tutorialArr.length; i++) {
         if (pers.tutorialArr[i].name.includes(queryParams.name)) {
