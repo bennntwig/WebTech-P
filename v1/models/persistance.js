@@ -1,3 +1,5 @@
+const index = require('../index');
+
 class Kategorie {
     constructor(name, bildUrl, bildName) {
         this.name = name;
@@ -49,10 +51,11 @@ class Kapitel {
 }
 
 function getDauerInStundenUndMinuten(dauer) {
-    let std = dauer.charAt(0) + charAt(1);
-    let min = dauer.charAt(3) + charAt(4);
+    const teile = dauer.split(':');
+    const stunden = parseInt(teile[0], 10);
+    const minuten = parseInt(teile[1], 10);
 
-    return std + " Std." + min + " Min.";
+    return `${stunden} Stunden und ${minuten} Minuten`;
 }
 
 function getTutorialsZuKategorie(kategorieName) {
@@ -102,4 +105,5 @@ tutorialArr.sort(function (a, b) { return a.name.localeCompare(b.name) });
 kategorieArr.sort(function (a, b) { return a.name.localeCompare(b.name) });
 
 module.exports.getTutorialsZuKategorie = getTutorialsZuKategorie;
+module.exports.tutorialArr = tutorialArr;
 module.exports.getDauerInStundenUndMinuten = getDauerInStundenUndMinuten;
